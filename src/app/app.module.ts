@@ -1,15 +1,16 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser'; 
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
-import {MatSelectModule} from '@angular/material/select'; 
+import {MatSelectModule} from '@angular/material/select';
 import { RouterModule } from '@angular/router';
+import {MatRadioModule} from '@angular/material/radio';
 
 import { AvionComponent } from './avion/avion.component';
 import { AutobusComponent } from './autobus/autobus.component';
-import { UberComponent } from './uber/uber.component'; 
+import { UberComponent } from './uber/uber.component';
 
 @NgModule({
   declarations: [
@@ -23,13 +24,13 @@ import { UberComponent } from './uber/uber.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatSelectModule,
+    MatRadioModule,
     RouterModule.forRoot([
       {path: 'avion', component: AvionComponent},
       {path: 'autobus', component: AutobusComponent},
       {path: 'uber', component: UberComponent},
       //{path: '', redirectTo: '/http://localhost:4200/', pathMatch: 'full'}
     ])
-    
   ],
   providers: [],
   bootstrap: [AppComponent]
