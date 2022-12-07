@@ -1,4 +1,5 @@
-import { createViewChild } from '@angular/compiler/src/core';
+import { render } from 'creditcardpayments/creditCardPayments';
+import Swal from 'sweetalert2';
 import { Component } from '@angular/core';
 
 var paypal;
@@ -10,4 +11,21 @@ var paypal;
 export class AppComponent {
   title = 'autobuses';
 
+  constructor(){
+    render({
+      id:"#myPaypalButtons",
+      currency:"MXN",
+      value:"100.00",
+      onApprove: (details) =>{
+        Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Pago realizado',
+          showConfirmButton: false,
+          timer: 1500
+        })
+      }
+
+    })
+  }
 }
