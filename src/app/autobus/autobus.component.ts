@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AutobusComponent implements OnInit {
 
+elemento=[];
+
+columnas=[
+  'origen',
+  'destino',
+  'horario',
+];
+
   constructor() { }
 
   ngOnInit(): void {
