@@ -10,7 +10,6 @@ var paypal;
 })
 export class AppComponent {
   title = 'autobuses';
-
   constructor(){
     render({
       id:"#myPaypalButtons",
@@ -24,8 +23,10 @@ export class AppComponent {
           showConfirmButton: false,
           timer: 1500
         })
+
       }
 
     })
+    window.location.reload();
   }
 }
