@@ -1,87 +1,71 @@
-
 <div class="card" id="selects">
   <div class="card-body">
+    <h3>Selecciona los datos de tu viaje en autobús</h3>
     <div class="row">
-      <div class="col-6">
-
-    <!-- SELECCION DE ORIGEN  -->
-    <mat-form-field appearance="fill">
-      <mat-label>Selecciona Tu Origen</mat-label>
-      <mat-select matNativeControl formControlName="id_origen" placeholder="ORIGEN" required>
-        <mat-option *ngfor="let ori of origen"  value="ori.nombre_origen">{{ori.nombre_origen}}</mat-option>
-      </mat-select>
-    </mat-form-field>
-        <!-- <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-          <option selected>Selecciona origen</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select> -->
-
-        &nbsp;
-       &nbsp;
-
-       <mat-form-field appearance="fill">
-        <mat-label>Selecciona Tu Destino</mat-label>
-        <mat-select  matNativeControl formControlName="id_destino" placeholder="DESTINO">
-          <mat-option *ngfor="let elemento of destino"  value="elemento.id_destino">{{elemento.id_destino}}</mat-option>
-        </mat-select>
-      </mat-form-field>
-
-        <!-- <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-          <option selected>Selecciona destino</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select> -->
-
-        &nbsp;
-       &nbsp;
-
-       <mat-form-field appearance="fill">
-        <mat-label>Selecciona Tu Horario</mat-label>
-        <mat-select matNativeControl formControlName="hora"placeholder="HORARIO 24 HRS">
-          <mat-option  value="1"> 8:00 am</mat-option>
-          <mat-option  value="1"> 8:40 am</mat-option>
-          <mat-option  value="1"> 9:20 am</mat-option>
-          <mat-option  value="1"> 10:00 am</mat-option>
-          <mat-option  value="1"> 10:40 am</mat-option>
-          <mat-option  value="1"> 11:20 am</mat-option>
-          <mat-option  value="1"> 12:00 pm </mat-option>
-          <mat-option  value="1"> 12:40 pm</mat-option>
-          <mat-option  value="1"> 1:20 pm</mat-option>
-          <mat-option  value="1"> 2:00 pm</mat-option>
-          <mat-option  value="1"> 2:40 pm</mat-option>
-          <mat-option  value="1"> 3:20 pm</mat-option>
-          <mat-option  value="1"> 4:00 pm </mat-option>
-          <mat-option  value="1"> 4:40 pm</mat-option>
-          <mat-option  value="1"> 5:20 pm</mat-option>
-          <mat-option  value="1"> 6:00 pm</mat-option>
-          <mat-option  value="1"> 6:40 pm</mat-option>
-          <mat-option  value="1"> 7:20 pm</mat-option>
-          <mat-option  value="1"> 8:00 pm</mat-option>
-          <mat-option  value="1"> 8:40 pm</mat-option>
-          <mat-option  value="1"> 9:20 pm</mat-option>
-          <mat-option  value="1"> 10:00 pm </mat-option>
-        </mat-select>
-      </mat-form-field>
-
-        <!-- <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-          <option selected>Selecciona hora</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select> -->
-
-        &nbsp;
-        &nbsp;
-
+      <div class="col-3">  
+        <mat-form-field appearance="outline">
+          <mat-label>Selecciona tu origen</mat-label>
+          <mat-select placeholder="HORARIO 24 HRS">
+            <mat-option  value="1"> Cd.Juárez, Chihuahua</mat-option>
+            <mat-option  value="2"> Hermosillo, Sonora</mat-option>
+            <mat-option  value="3"> Saltillo, Coahuila</mat-option>
+            <mat-option  value="4"> Querétaro, Querétaro</mat-option>
+            <mat-option  value="5"> CDMX</mat-option>
+            <mat-option  value="6"> Guadalajara, Jalisco</mat-option>
+            <mat-option  value="7"> Monterrey, Monterrey </mat-option>
+            <mat-option  value="8"> Acapulco, Guerrero</mat-option>
+          </mat-select>
+        </mat-form-field>
       </div>
-      <div class="col-6">
+      <div class="col-3">
+        <mat-form-field appearance="outline">
+          <mat-label>Selecciona tu destino</mat-label>
+          <mat-select placeholder="HORARIO 24 HRS">
+            <mat-option  value="1"> Cd.Juárez, Chihuahua</mat-option>
+            <mat-option  value="2"> Hermosillo, Sonora</mat-option>
+            <mat-option  value="3"> Saltillo, Coahuila</mat-option>
+            <mat-option  value="4"> Querétaro, Querétaro</mat-option>
+            <mat-option  value="5"> CDMX</mat-option>
+            <mat-option  value="6"> Guadalajara, Jalisco</mat-option>
+            <mat-option  value="7"> Monterrey, Monterrey </mat-option>
+            <mat-option  value="8"> Acapulco, Guerrero</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col-3">
+        <mat-form-field appearance="outline">
+          <mat-label>Selecciona el horario</mat-label>
+          <mat-select placeholder="HORARIO 24 HRS">
+            <mat-option > 8:00 am</mat-option>
+            <mat-option > 8:40 am</mat-option>
+            <mat-option > 9:20 am</mat-option>
+            <mat-option > 10:00 am</mat-option>
+            <mat-option > 10:40 am</mat-option>
+            <mat-option > 11:20 am</mat-option>
+            <mat-option > 12:00 pm </mat-option>
+            <mat-option > 12:40 pm</mat-option>
+            <mat-option > 1:20 pm</mat-option>
+            <mat-option > 2:00 pm</mat-option>
+            <mat-option > 2:40 pm</mat-option>
+            <mat-option > 3:20 pm</mat-option>
+            <mat-option > 4:00 pm </mat-option>
+            <mat-option > 4:40 pm</mat-option>
+            <mat-option > 5:20 pm</mat-option>
+            <mat-option > 6:00 pm</mat-option>
+            <mat-option > 6:40 pm</mat-option>
+            <mat-option > 7:20 pm</mat-option>
+            <mat-option > 8:00 pm</mat-option>
+            <mat-option > 8:40 pm</mat-option>
+            <mat-option > 9:20 pm</mat-option>
+            <mat-option > 10:00 pm </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col-3">
         <div class="form-floating mb-3">
           <input type="date" class="form-control" id="floatingInput" >
           <label for="floatingInput">Selecciona fecha</label>
-        </div>
+      </div>
 
       </div>
     </div>
@@ -91,15 +75,17 @@
 
 <div class="card">
   <div class="card-body">
+    <h3>Selecciona tu paquete</h3>
     <div class="row">
       <div class="col-sm">
         <div class="card">
           <div class="card-body">
-            <h4>Paquete 1</h4>
+            <h4>Paquete VIP</h4>
             <ul>
-              <li>servicio uno</li>
-              <li>servicio dos</li>
-              <li>servicio tres</li>
+              <li>Servicio de snacks</li>
+              <li>Internet</li>
+              <li>Puerto USB</li>
+              <li>Baño</li>
             </ul>
             <div id="btnRadio">
               <mat-radio-button value="1">Seleccionar</mat-radio-button>
@@ -110,11 +96,12 @@
       <div class="col-sm">
         <div class="card">
           <div class="card-body">
-            <h4>Paquete 1</h4>
+            <h4>Paquete Platino</h4>
             <ul>
-              <li>servicio uno</li>
-              <li>servicio dos</li>
-              <li>servicio tres</li>
+              <li>Internet</li>
+              <li>Baño</li>
+              <li> </li>
+              <li> </li>
             </ul>
             <div id="btnRadio">
               <mat-radio-button value="1">Seleccionar</mat-radio-button>
@@ -125,11 +112,12 @@
       <div class="col-sm">
         <div class="card">
           <div class="card-body">
-            <h4>Paquete 1</h4>
+            <h4>Paquete General</h4>
             <ul>
-              <li>servicio uno</li>
-              <li>servicio dos</li>
-              <li>servicio tres</li>
+              <li>Baño</li>
+              <li> </li>
+              <li> </li>
+              <li> </li>
             </ul>
             <div id="btnRadio">
               <mat-radio-button value="1">Seleccionar</mat-radio-button>
