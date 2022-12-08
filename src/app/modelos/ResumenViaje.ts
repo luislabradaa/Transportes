@@ -8,7 +8,6 @@ export interface ResumenViaje{
     hora:string;
     fecha: Date;
     total:number;
-
     id_origen: Origen;
     id_destino: Destino;
     id_paq: Paquetes;

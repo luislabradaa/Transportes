@@ -1,3 +1,4 @@
+
 <div class="card" id="selects">
   <div class="card-body">
     <div class="row">
@@ -6,8 +7,8 @@
     <!-- SELECCION DE ORIGEN  -->
     <mat-form-field appearance="fill">
       <mat-label>Selecciona Tu Origen</mat-label>
-      <mat-select [formControl]="origen"  [(ngModel)]="origen.nombre" placeholder="ORIGEN">
-        <mat-option *ngfor="let elemento of elemento"  value="elemento.origen">{{elemento.origen}}</mat-option>
+      <mat-select matNativeControl formControlName="id_origen" placeholder="ORIGEN" required>
+        <mat-option *ngfor="let ori of origen"  value="ori.nombre_origen">{{ori.nombre_origen}}</mat-option>
       </mat-select>
     </mat-form-field>
         <!-- <select class="form-select form-select-sm" aria-label=".form-select-sm example">
@@ -22,8 +23,8 @@
 
        <mat-form-field appearance="fill">
         <mat-label>Selecciona Tu Destino</mat-label>
-        <mat-select [formControl]="destino"  [(ngModel)]="transporte.destino" placeholder="DESTINO">
-          <mat-option *ngfor="let elemento of elemento"  value="elemento.destino">{{elemento.destino}}</mat-option>
+        <mat-select  matNativeControl formControlName="id_destino" placeholder="DESTINO">
+          <mat-option *ngfor="let elemento of destino"  value="elemento.id_destino">{{elemento.id_destino}}</mat-option>
         </mat-select>
       </mat-form-field>
 
@@ -39,7 +40,7 @@
 
        <mat-form-field appearance="fill">
         <mat-label>Selecciona Tu Horario</mat-label>
-        <mat-select [formControl]="horario"  [(ngModel)]="transporte.horario" placeholder="HORARIO 24 HRS">
+        <mat-select matNativeControl formControlName="hora"placeholder="HORARIO 24 HRS">
           <mat-option  value="1"> 8:00 am</mat-option>
           <mat-option  value="1"> 8:40 am</mat-option>
           <mat-option  value="1"> 9:20 am</mat-option>

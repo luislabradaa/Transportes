@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
@@ -34,6 +34,7 @@ import { UberComponent } from './uber/uber.component';
     MatIconModule,
     MatInputModule ,
     MatCardModule,
+    FormsModule,
     RouterModule.forRoot([
       {path: 'avion', component: AvionComponent},
       {path: 'autobus', component: AutobusComponent},

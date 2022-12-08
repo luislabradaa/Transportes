@@ -27,6 +27,6 @@ export class AppComponent {
       }
 
     })
-    window.location.reload();
+    //window.location.reload();
   }
 }
